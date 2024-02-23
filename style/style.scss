@@ -1,0 +1,45 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import "_variables.scss";
+
+
+.icon-image:hover {
+    transform: scale(1.1);
+  }
+  
+
+#icon {
+    width: 20rem;
+    height: 5rem;
+    :hover {
+      transform: scale(2.5);
+      background-color: $black;
+    }
+}
+
+.navbar-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.animate-wave {
+  animation: wave 1s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(10deg);
+  }
+  75% {
+      transform: rotate(-10deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
